@@ -9,11 +9,11 @@ Działa w oparciu o model AI z platformy Hugging Face.
 
 1. **Sklonuj repozytorium i zainstaluj zależności**:
 
-bash
+```bash
 git clone <link-do-repo>
 cd <nazwa-folderu>
 npm install
-
+```
 2. **Utwórz plik .env w katalogu głównym projektu** na podstawie przykładu:
 
    *W pliku .env uzupełnij swój token API z Hugging Face:
@@ -27,15 +27,16 @@ npm install
    ```
 4. **Uruchom aplikację lokalnie w trybie developerskim:**
    
-bash
-   npm run dev 
+```bash
+   npm run dev
+```
  Po chwili aplikacja powinna być dostepna pod adresem
     http://localhost:5173
  
 4. **(Opcjonalnie) Uruchom testy jednostkowe:**
-bash
+```bash
 npm run test
-
+```
 Testy zostały napisane przy użyciu biblioteki Vitest i obejmują kluczowe funkcje aplikacji:
 
  * validateText – walidacja danych wejściowych użytkownika
