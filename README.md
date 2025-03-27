@@ -5,7 +5,7 @@ Działa w oparciu o model AI z platformy Hugging Face.
 
 ---
 
-## Instrukcja uruchomienia projektudoklad
+## Instrukcja uruchomienia projektu
 
 1. **Sklonuj repozytorium i zainstaluj zależności**:
 
@@ -22,9 +22,10 @@ npm install
    👉 https://huggingface.co/settings/tokens
 
    Po uzyskaniu Tokenu dodaj go do pliku .env
+   ```env
    VITE_HF_API_KEY=your_token_here
-
-3. **Uruchom aplikację lokalnie w trybie developerskim:**
+   ```
+4. **Uruchom aplikację lokalnie w trybie developerskim:**
    
 bash
    npm run dev 
@@ -34,7 +35,8 @@ bash
 4. **(Opcjonalnie) Uruchom testy jednostkowe:**
 bash
 npm run test
-** Testy zostały napisane przy użyciu biblioteki Vitest i obejmują kluczowe funkcje aplikacji:
+
+Testy zostały napisane przy użyciu biblioteki Vitest i obejmują kluczowe funkcje aplikacji:
 
  * validateText – walidacja danych wejściowych użytkownika
 
@@ -55,7 +57,7 @@ Projekt został stworzony przy użyciu nowoczesnego stosu technologicznego:
 - **Vitest** – framework do testów jednostkowych
 - **.env** – przechowywanie klucza API w bezpieczny sposób
 
- **Informacja o modelu AI
+ ## ℹ️ Informacja o modelu AI
 
 W projekcie wykorzystano model `distilbert-base-uncased-finetuned-sst-2-english` z Hugging Face.
 
