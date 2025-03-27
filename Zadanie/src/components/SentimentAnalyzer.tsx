@@ -16,7 +16,7 @@ function validateText(text: string): string | null {
 function getTopSentiment(data: any): string {
     if (!Array.isArray(data) || data.length === 0 || !Array.isArray(data[0])) {
         console.warn('⚠️ Nieoczekiwany format odpowiedzi:', data)
-        return 'LABEL_0' // fallback = NEGATIVE
+        return 'LABEL_0'
     }
 
     const predictions = data[0]
@@ -30,7 +30,7 @@ function getTopSentiment(data: any): string {
 function normalizeLabel(raw: string | undefined): Sentiment {
     if (raw === 'LABEL_1' || raw?.toUpperCase() === 'POSITIVE') return 'POSITIVE'
     if (raw === 'LABEL_0' || raw?.toUpperCase() === 'NEGATIVE') return 'NEGATIVE'
-    return 'NEGATIVE' // fallback
+    return 'NEGATIVE'
 }
 
 export default function SentimentAnalyzer() {
